@@ -1,0 +1,251 @@
+#caroline {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+#caroline img {
+  width: 80px;
+  height: auto;
+}
+
+#caroline h1 {
+  font-size: 64px;
+}
+
+#X {
+  font-size: 48px;
+  display: flex;
+  margin-left: 600px;
+}
+
+
+#galerie h2 {
+  font-size: 64px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  text-align: end;
+}
+
+
+#images {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#images img {
+  width: 300px;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background-color: #fafafa;
+  transition: transform 0.2s ease;
+  margin-bottom: 30px;
+}
+
+#images img:hover {
+  transform: scale(1.05);
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#biographie {
+  max-width: 900px;
+}
+
+#biographie p {
+  font-size: large;
+}
+
+.box h4 {
+  font-weight: lighter;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+main h1 {
+  font-size: 64px;
+  margin-bottom: 15px;
+}
+
+main p {
+  font-size: 32px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+
+main img {
+  width: 600px;
+  height: auto;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+main {
+  padding: 40px;
+}
+
+
+.expositions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+
+#blockexpo1,
+#blockexpo2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 48%;
+}
+
+
+#expo1,
+#expo2,
+#expo3,
+#expo4 {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.expositions img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 15px auto;
+}
+
+
+.expositions p {
+  background-color: #e0e0e0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.slider {
+  width: 100%;
+  max-width: 400px;
+  
+  height: auto;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(400px * 5);
+  animation: scroll 25s linear infinite;
+}
+
+.slider-track img {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-400px);
+  }
+
+  45% {
+    transform: translateX(-400px);
+  }
+
+  50% {
+    transform: translateX(-800px);
+  }
+
+  70% {
+    transform: translateX(-800px);
+  }
+
+  75% {
+    transform: translateX(-1200px);
+  }
+
+  95% {
+    transform: translateX(-1200px);
+  }
+
+  100% {
+    transform: translateX(-1600px);
+  }
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.footer a {
+  color: black;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 280px;
+}
+
+.social-links a {
+  margin-right: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-logos>div {
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.logo_spfb {
+  background-image: url('/img/logo_spfb.png');
+}
+
+.logo_bxl {
+  background-image: url('/img/logo_bxl.png');
+}
+
+.logo_fwb {
+  background-image: url('/img/logo_fwb.png');
+}
